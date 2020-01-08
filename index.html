@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Password Generator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="container passcontain">
+            <div class="row">
+                <h1 class="col s12 containtitle">Password Generator</h1>
+            </div>
+            <div class="row">
+                <textarea class="col m11" readonly  placeholder="Your Secure Password"
+                    aria-label="Generated Password" id="passwordDisplay">
+                    </textarea>
+                <i class="col m1 small material-icons">content_paste</i>
+            </div>
+            <form id="passwordGeneratorForm">
+                <label class="row">
+                    <input class="col m1"  type="number" min="8" max="128" value="8" id="numOfCharacters"/>
+                    <span class="col m4">Number Of Characters 8-128</span>
+                </label>
+                <label class="row">
+                    <input  type="checkbox" class="filled-in" checked="checked" id="special"/>
+                    <span>Special characters</span>
+                </label>
+                <label class="row">
+                    <input  type="checkbox" class="filled-in" checked="checked" id="numeric"/>
+                    <span>Numeric characters</span>
+                </label>
+                <label class="row">
+                    <input  type="checkbox" class="filled-in" checked="checked" id="uppercase"/>
+                    <span>Uppercase characters</span>
+                </label>
+                <div class="row">
+                    <button type="submit" class="btn center col s4">Generate Password</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
