@@ -4,7 +4,7 @@ let numeric = document.getElementById('numeric');
 let uppercase = document.getElementById('uppercase');
 let lowercase = document.getElementById('lowercase');
 const form = document.getElementById('passwordGeneratorForm');
-const passwordDisplay = document.getElementById('passwordDisplay');
+let passwordDisplay = document.getElementById('passwordDisplay');
 
 const uppercaseCharCodes = arrayFromLowToHigh(65, 90);
 const lowercaseCharCodes = arrayFromLowToHigh(97, 122);
@@ -35,6 +35,9 @@ function genereratePassword(numOfCharacters, specialval, numericval, uppercaseva
     if (uppercaseval) charCodes.push(uppercaseCharCodes);
     if (numericval) charCodes.push(numericCharCodes);
     if (specialval) charCodes.push(specialCharCodes);
+    if (!lowercaseval && !uppercaseval && !numericval && !specialval) {
+        alert("You must select at lest one character type.")
+    }
 
     const passwordCharacters = []
     for (let i = 0; i < numOfCharacters; i++) {
@@ -44,6 +47,7 @@ function genereratePassword(numOfCharacters, specialval, numericval, uppercaseva
     }
 
     return passwordCharacters.join('');
+
 }
 
 function arrayFromLowToHigh(low, high) {
@@ -52,4 +56,12 @@ function arrayFromLowToHigh(low, high) {
         array.push(i);
     }
     return array;
+}
+
+function copyClipboard() {
+    var copyText = document.getElementById('passwordDisplay');
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand('copy');
+    alert("Copied the text: " + copyText.value);
 }

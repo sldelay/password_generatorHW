@@ -3,6 +3,8 @@
     background-color: rgb(65, 64, 64);
 } */
 
+@import url('https://fonts.googleapis.com/css?family=Varela+Round|Viga&display=swap');
+
 body, html {
     height: 100%;
     display: grid;
@@ -10,7 +12,9 @@ body, html {
 
 h1 {
     font-size: 3em;
+    font-family: 'Viga', sans-serif;
     margin-top: 0;
+    color: #fff;
 }
 
 body {
@@ -22,17 +26,73 @@ body {
 }
 
 textarea {
-    background-color: #fff;
+    background-color: #9a9898;
 }
 .container.passcontain {
-    background-color: rgb(155, 185, 175);
+    background-color:#262727;
     padding: 3em;
     max-width: 50em;
     margin: auto;
     border-radius: .4em;
     box-shadow: 5px 5px 10px rgb(61, 60, 60);
+    font-family: 'Varela Round', sans-serif;
 }
 
 .containtitle {
     text-align: center;
+}
+
+#copyBoard {
+    background-color: transparent;
+    border: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+#numOfCharacters {
+    width: 2.5em;
+    height: 2em;
+    background-color: #9a9898;
+}
+
+.numberLabel {
+    padding-left: 3px;
+    font-size: 1rem;
+}
+
+/* @media screen and (max-width: 750px) {
+    button.submitBtn {
+        background-color: blue;
+        width: 50%!important;
+    }
+} */
+
+@media screen and (max-width: 550px) {
+    h1 {
+        font-size: 2em;
+    }
+    row{
+        font-size: .75em;
+    }
+}
+
+@media screen and (max-width: 401px) {
+    h1 {
+        font-size: 1.42em;
+    }
+    #passwordGeneratorForm {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    .numberLabel {
+        font-size: 12px;
+    }
+
+    #numOfCharacters {
+        font-size: 12px;
+        width: 2em;
+    }
 }
