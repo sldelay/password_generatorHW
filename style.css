@@ -27,6 +27,7 @@ body {
 
 textarea {
     background-color: #9a9898;
+    text-align: center;
 }
 .container.passcontain {
     background-color:#262727;
@@ -48,6 +49,7 @@ textarea {
     padding: 0;
     cursor: pointer;
     color: #3e8a83;
+    margin-top: 6px;
     
 }
 
@@ -55,6 +57,7 @@ textarea {
     width: 2.5em;
     height: 2em;
     background-color: #9a9898;
+    text-align: center;
 }
 
 .numberLabel {
