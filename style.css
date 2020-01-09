@@ -60,19 +60,27 @@ textarea {
     font-size: 1rem;
 }
 
-/* @media screen and (max-width: 750px) {
-    button.submitBtn {
-        background-color: blue;
-        width: 50%!important;
+@media screen and (max-width: 750px) {
+    form > div > button.btn.col.s12.m4.center.submitBtn {
+        width: 50%;
     }
-} */
+}
 
 @media screen and (max-width: 550px) {
     h1 {
         font-size: 2em;
     }
-    row{
-        font-size: .75em;
+    row {
+        font-size: .10px;
+    }
+    form > div > button.btn.col.s12.m4.center.submitBtn {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    form > div > button.btn.col.s12.m4.center.submitBtn {
+        width: 100%;
     }
 }
 
