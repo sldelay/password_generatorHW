@@ -36,7 +36,7 @@ function genereratePassword(numOfCharacters, specialval, numericval, uppercaseva
     if (numericval) charCodes.push(numericCharCodes);
     if (specialval) charCodes.push(specialCharCodes);
     if (!lowercaseval && !uppercaseval && !numericval && !specialval) {
-        alert("You must select at lest one character type.")
+        alert("You must select at least one character type.")
     }
 
     const passwordCharacters = []
