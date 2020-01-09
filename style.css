@@ -28,6 +28,7 @@ body {
 textarea {
     background-color: #9a9898;
     text-align: center;
+    word-break: break-all;
 }
 .container.passcontain {
     background-color:#262727;
