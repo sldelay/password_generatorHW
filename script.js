@@ -31,7 +31,7 @@ form.addEventListener('submit', event => {
 
 function genereratePassword(numOfCharacters, specialval, numericval, uppercaseval, lowercaseval) {
     let charCodes = [];
-    if (lowercaseval) charCodes.push(lowercaseCharCodes); 
+    if (lowercaseval) charCodes.push(lowercaseCharCodes);
     if (uppercaseval) charCodes.push(uppercaseCharCodes);
     if (numericval) charCodes.push(numericCharCodes);
     if (specialval) charCodes.push(specialCharCodes);
