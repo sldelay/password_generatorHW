@@ -3,6 +3,9 @@ UNH Bootcamp Week 3 HW
 
 ![alt text](images/password_generator.png)
 
+
+Link to live website: (https://sldelay.github.io/password_generatorHW/)
+
 ## Instructions
 
 Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.
