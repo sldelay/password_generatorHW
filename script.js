@@ -9,7 +9,7 @@ let passwordDisplay = document.getElementById('passwordDisplay');
 const uppercaseCharCodes = arrayFromLowToHigh(65, 90);
 const lowercaseCharCodes = arrayFromLowToHigh(97, 122);
 const numericCharCodes = arrayFromLowToHigh(48, 57);
-const specialCharCodes = arrayFromLowToHigh(33, 47).concat(
+const specialCharCodes = arrayFromLowToHigh(35, 47).concat(
     arrayFromLowToHigh(58, 64)
 ).concat(
     arrayFromLowToHigh(91, 96)

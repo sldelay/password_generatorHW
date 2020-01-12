@@ -29,6 +29,7 @@ textarea {
     background-color: #9a9898;
     text-align: center;
     word-break: break-all;
+    word-wrap: normal;
 }
 .container.passcontain {
     background-color:#262727;
@@ -44,15 +45,15 @@ textarea {
     text-align: center;
 }
 
-#copyBoard {
+button#copyBoard {
     background-color: transparent;
     border: transparent;
     padding: 0;
     cursor: pointer;
     color: #3e8a83;
-    margin-top: 6px;
-    
+    margin-top: 6px;  
 }
+
 
 #numOfCharacters {
     width: 2.5em;
