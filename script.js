@@ -6,17 +6,6 @@ let lowercase = document.getElementById('lowercase');
 const form = document.getElementById('passwordGeneratorForm');
 let passwordDisplay = document.getElementById('passwordDisplay');
 
-const uppercaseCharCodes = arrayFromLowToHigh(65, 90);
-const lowercaseCharCodes = arrayFromLowToHigh(97, 122);
-const numericCharCodes = arrayFromLowToHigh(48, 57);
-const specialCharCodes = arrayFromLowToHigh(35, 47).concat(
-    arrayFromLowToHigh(58, 64)
-).concat(
-    arrayFromLowToHigh(91, 96)
-).concat(
-    arrayFromLowToHigh(123, 126)
-);
-
 form.addEventListener('submit', event => {
     event.preventDefault()
     let numOfCharactersval = numOfCharacters.value;
@@ -30,6 +19,16 @@ form.addEventListener('submit', event => {
 
 
 function genereratePassword(numOfCharacters, specialval, numericval, uppercaseval, lowercaseval) {
+    const uppercaseCharCodes = arrayFromLowToHigh(65, 90);
+    const lowercaseCharCodes = arrayFromLowToHigh(97, 122);
+    const numericCharCodes = arrayFromLowToHigh(48, 57);
+    const specialCharCodes = arrayFromLowToHigh(35, 47).concat(
+        arrayFromLowToHigh(58, 64)
+    ).concat(
+        arrayFromLowToHigh(91, 96)
+    ).concat(
+        arrayFromLowToHigh(123, 126)
+    );
     let charCodes = [];
     if (lowercaseval) charCodes.push(lowercaseCharCodes);
     if (uppercaseval) charCodes.push(uppercaseCharCodes);
